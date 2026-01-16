@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28">
-        <div className="absolute inset-0 bg-linear-to-br from-blue-50/50 via-white to-cyan-50/30" />
+      <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-blue-50/50 via-white to-cyan-50/30">
         <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-blue-200/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-cyan-200/20 blur-3xl" />
         
@@ -15,7 +14,7 @@ export default function Home() {
             
             {/* Left Column */}
             <div className="relative z-10">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-blue-600/10 to-cyan-600/10 px-4 py-2 ring-1 ring-blue-600/20">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600/10 to-cyan-600/10 px-4 py-2 ring-1 ring-blue-600/20">
                 <div className="h-2 w-2 animate-pulse rounded-full bg-blue-600" />
                 <span className="text-sm font-bold text-blue-900">Cabinet dentaire moderne</span>
               </div>
@@ -23,7 +22,7 @@ export default function Home() {
               <h1 className="mb-6 text-4xl font-black leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                 Votre sourire,{" "}
                 <span className="relative">
-                  <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                     notre passion
                   </span>
                   <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 200 12" fill="none">
@@ -45,21 +44,21 @@ export default function Home() {
 
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                 <Link
-                  href="/appointment"
-                  className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-2xl bg-linear-to-r from-blue-600 to-blue-700 px-8 py-4 font-bold text-white shadow-lg shadow-blue-500/30 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40"
+                  href="/contact"
+                  className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-bold text-white shadow-lg shadow-blue-500/30 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/40"
                 >
                   <span>Prendre rendez-vous</span>
                   <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                  <div className="absolute inset-0 -z-10 bg-linear-to-r from-blue-700 to-blue-800 opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 transition-opacity group-hover:opacity-100" />
                 </Link>
 
                 <Link
                   href="/services"
                   className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 font-bold text-slate-700 ring-2 ring-slate-200 transition-all hover:bg-slate-50 hover:ring-slate-300"
                 >
-                  <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Nos services</span>
+                  <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Nos services</span>
                   <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -96,8 +95,8 @@ export default function Home() {
 
             {/* Right Column */}
             <div className="relative">
-              <div className="group relative overflow-hidden rounded-4xl bg-linear-to-br from-slate-100 to-slate-50 p-1 shadow-2xl">
-                <div className="relative h-112 overflow-hidden rounded-[1.75rem] bg-slate-200 lg:h-150">
+              <div className="group relative overflow-hidden rounded-4xl bg-gradient-to-br from-slate-100 to-slate-50 p-1 shadow-2xl">
+                <div className="relative h-96 lg:h-[500px] overflow-hidden rounded-[1.75rem] bg-slate-200">
                   <Image
                     src="/hero.jpg"
                     alt="Cabinet dentaire moderne"
@@ -106,23 +105,13 @@ export default function Home() {
                     priority
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  <div className="flex h-full items-center justify-center bg-linear-to-br from-blue-100 via-white to-cyan-100">
-                    <div className="text-center">
-                      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-white/80 backdrop-blur-sm">
-                        <svg className="h-10 w-10 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                        </svg>
-                      </div>
-                      <p className="text-sm font-semibold text-slate-500">Hero Image</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
               {/* Floating Stats */}
               <div className="absolute -right-4 top-12 hidden rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-slate-900/5 lg:block">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-blue-500 to-blue-600">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600">
                     <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
                     </svg>
@@ -136,7 +125,7 @@ export default function Home() {
 
               <div className="absolute -left-4 bottom-12 hidden rounded-2xl bg-white p-4 shadow-2xl ring-1 ring-slate-900/5 lg:block">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-cyan-500 to-cyan-600">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-cyan-600">
                     <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
@@ -157,7 +146,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Pourquoi nous choisir
+              Pourquoi <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">nous choisir</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-600">
               Un cabinet moderne qui allie technologie de pointe et approche humaine
@@ -172,7 +161,7 @@ export default function Home() {
               { icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z", title: "Sans douleur", desc: "Interventions en douceur", gradient: "from-cyan-500 to-cyan-600" },
             ].map((item, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-900/5 transition-all hover:-translate-y-1 hover:shadow-xl">
-                <div className={`mb-6 inline-flex rounded-2xl bg-linear-to-br ${item.gradient} p-4 shadow-lg`}>
+                <div className={`mb-6 inline-flex rounded-2xl bg-gradient-to-br ${item.gradient} p-4 shadow-lg`}>
                   <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
                   </svg>
@@ -190,7 +179,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Nos services
+              Nos <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">services</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-600">
               Une gamme complète de soins dentaires pour toute la famille
@@ -207,14 +196,14 @@ export default function Home() {
               { icon: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z", title: "Urgences dentaires", desc: "Prise en charge rapide 24/7", color: "cyan" },
             ].map((service, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-900/5 transition-all hover:-translate-y-1 hover:shadow-xl">
-                <div className={`mb-6 inline-flex rounded-2xl bg-linear-to-br from-${service.color}-500 to-${service.color}-600 p-4 shadow-lg`}>
+                <div className={`mb-6 inline-flex rounded-2xl bg-gradient-to-br from-${service.color}-500 to-${service.color}-600 p-4 shadow-lg`}>
                   <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={service.icon} />
                   </svg>
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-slate-900">{service.title}</h3>
                 <p className="mb-4 text-slate-600">{service.desc}</p>
-                <Link href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`} className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition-colors hover:text-blue-700">
+                <Link href="/services" className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition-colors hover:text-blue-700">
                   En savoir plus
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -240,8 +229,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="relative order-2 lg:order-1">
-              <div className="group relative overflow-hidden rounded-4xl bg-linear-to-br from-slate-100 to-slate-50 p-1 shadow-2xl">
-                <div className="relative h-100 overflow-hidden rounded-[1.75rem] bg-slate-200 lg:h-125">
+              <div className="group relative overflow-hidden rounded-4xl bg-gradient-to-br from-slate-100 to-slate-50 p-1 shadow-2xl">
+                <div className="relative h-96 lg:h-[500px] overflow-hidden rounded-[1.75rem] bg-slate-200">
                   <Image
                     src="/about-clinic.jpg"
                     alt="Cabinet"
@@ -249,33 +238,23 @@ export default function Home() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  <div className="flex h-full items-center justify-center bg-linear-to-br from-blue-100 via-white to-cyan-100 p-12">
-                    <div className="text-center">
-                      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white/80 backdrop-blur-sm">
-                        <svg className="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
-                      </div>
-                      <p className="font-semibold text-slate-500">Cabinet moderne</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
             <div className="order-1 lg:order-2">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-blue-600/10 to-cyan-600/10 px-4 py-2 ring-1 ring-blue-600/20">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600/10 to-cyan-600/10 px-4 py-2 ring-1 ring-blue-600/20">
                 <div className="h-2 w-2 rounded-full bg-blue-600" />
                 <span className="text-sm font-bold text-blue-900">À propos</span>
               </div>
 
               <h2 className="mb-6 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-                Un cabinet à votre écoute depuis <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">15 ans</span>
+                Un cabinet à votre écoute depuis <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">15 ans</span>
               </h2>
 
               <div className="space-y-4 text-lg text-slate-600">
                 <p>
-                  Fondé en 2009, notre cabinet dentaire s'est donné pour mission de fournir des soins dentaires 
+                  Fondé en 2009, notre cabinet dentaire s&apos;est donné pour mission de fournir des soins dentaires 
                   de haute qualité dans un environnement chaleureux et moderne.
                 </p>
                 <p>
@@ -284,18 +263,18 @@ export default function Home() {
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-4">
-                <div className="rounded-2xl bg-linear-to-br from-blue-50 to-cyan-50 p-6 ring-1 ring-blue-100">
+                <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 p-6 ring-1 ring-blue-100">
                   <p className="text-3xl font-black text-blue-600">15+</p>
-                  <p className="text-sm font-bold text-slate-700">Années d'expérience</p>
+                  <p className="text-sm font-bold text-slate-700">Années d&apos;expérience</p>
                 </div>
-                <div className="rounded-2xl bg-linear-to-br from-cyan-50 to-blue-50 p-6 ring-1 ring-cyan-100">
+                <div className="rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-50 p-6 ring-1 ring-cyan-100">
                   <p className="text-3xl font-black text-cyan-600">2,500+</p>
                   <p className="text-sm font-bold text-slate-700">Patients satisfaits</p>
                 </div>
               </div>
 
               <div className="mt-8">
-                <Link href="/about" className="inline-flex items-center gap-2 rounded-2xl bg-linear-to-r from-blue-600 to-blue-700 px-8 py-4 font-bold text-white shadow-lg transition-all hover:scale-[1.02]">
+                <Link href="/about" className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-bold text-white shadow-lg transition-all hover:scale-[1.02]">
                   En savoir plus
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -308,11 +287,11 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-linear-to-br from-slate-50 to-white py-16 lg:py-24">
+      <section className="bg-gradient-to-br from-slate-50 to-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Ce que disent nos patients
+              Ce que disent <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">nos patients</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-600">
               La satisfaction de nos patients est notre plus grande fierté
@@ -335,7 +314,7 @@ export default function Home() {
                 </div>
                 <p className="mb-6 text-slate-700">{testimonial.text}</p>
                 <div className="flex items-center gap-3">
-                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br ${testimonial.gradient} font-bold text-white`}>
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${testimonial.gradient} font-bold text-white`}>
                     {testimonial.initials}
                   </div>
                   <div>
@@ -352,7 +331,7 @@ export default function Home() {
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-linear-to-br from-blue-600 via-blue-700 to-cyan-600 p-12 shadow-2xl lg:p-20">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 p-12 shadow-2xl lg:p-20">
             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
             <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
             <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
@@ -365,7 +344,7 @@ export default function Home() {
                 Premier rendez-vous disponible sous 48h. Consultation personnalisée avec nos experts.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link href="/appointment" className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 font-bold text-blue-600 shadow-xl transition-all hover:scale-105">
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 font-bold text-blue-600 shadow-xl transition-all hover:scale-105">
                   Prendre rendez-vous
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -381,51 +360,125 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="bg-slate-50 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-4">
+              <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
+              </svg>
+              <span className="text-sm font-bold text-blue-600 uppercase tracking-wide">Contact</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Venez nous rendre visite
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-slate-600">
-              Cabinet facilement accessible avec parking gratuit
+            <p className="text-lg text-slate-600">
+              Notre cabinet est situé à Agadir, facilement accessible avec parking gratuit disponible.
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="space-y-6">
-              {[
-                { icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z", title: "Adresse", content: "Citée El Houda, Agadir morocco", gradient: "from-blue-500 to-blue-600" },
-                { icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z", title: "Téléphone", content: "+212651625941", gradient: "from-cyan-500 to-cyan-600", href: "tel:+33142566789" },
-                { icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z", title: "Email", content: "helloahmed2002@gmail.com", gradient: "from-blue-500 to-blue-600", href: "mailto:contact@smilecare.fr" },
-                { icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", title: "Horaires", content: "Lun-Ven: 9h-19h\nSam: 9h-17h\nDim: Fermé", gradient: "from-cyan-500 to-cyan-600" },
-              ].map((item, idx) => (
-                <div key={idx} className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-slate-900/5">
-                  <div className={`mb-4 inline-flex rounded-2xl bg-linear-to-br ${item.gradient} p-3`}>
-                    <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Contact Info Cards */}
+            <div className="lg:col-span-1 space-y-6">
+              {/* Address */}
+              <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-500">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-slate-900">{item.title}</h3>
-                  {item.href ? (
-                    <a href={item.href} className="text-slate-600 transition-colors hover:text-blue-600">
-                      {item.content}
-                    </a>
-                  ) : (
-                    <p className="whitespace-pre-line text-slate-600">{item.content}</p>
-                  )}
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Adresse</h3>
+                    <p className="text-slate-600 text-sm">Citée El Houda<br />Agadir, Morocco</p>
+                  </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Phone */}
+              <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-emerald-500">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Téléphone</h3>
+                    <a href="tel:+212651625941" className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                      +212 651 625 941
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-purple-500">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Email</h3>
+                    <a href="mailto:helloahmed2002@gmail.com" className="text-purple-600 font-semibold hover:text-purple-700 transition-colors text-sm break-all">
+                      helloahmed2002@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hours */}
+              <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-cyan-500">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-slate-900 mb-3">Horaires</h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-slate-600">Lun - Ven</span>
+                        <span className="font-semibold text-slate-900">9h - 19h</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-600">Samedi</span>
+                        <span className="font-semibold text-slate-900">9h - 17h</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-600">Dimanche</span>
+                        <span className="font-semibold text-red-600">Fermé</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="h-125 overflow-hidden rounded-3xl bg-white p-1 shadow-lg ring-1 ring-slate-900/5 lg:h-full">
+            {/* Map */}
+            <div className="lg:col-span-2 relative h-96 lg:h-full min-h-[500px] rounded-2xl overflow-hidden shadow-xl border border-slate-200">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10199.523750457343!2d-9.539242229324516!3d30.39538536486307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c825f48b65f7%3A0xc1a03d5109d60a9e!2sCit%C3%A9%20El%20Houda%2C%20Agadir%2080000!5e0!3m2!1sfr!2sma!4v1768314903452!5m2!1sfr!2sma"
-                className="h-full w-full rounded-[1.4rem]"
+                className="w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
+                title="Cabinet Location Map"
               />
+              
+              {/* Location Badge */}
+              <div className="absolute top-6 left-6 bg-white px-4 py-3 rounded-xl shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="relative">
+                    <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+                    <div className="absolute inset-0 w-3 h-3 bg-blue-600 rounded-full animate-ping"></div>
+                  </div>
+                  <span className="text-sm font-bold text-slate-900">Notre cabinet</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
