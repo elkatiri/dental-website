@@ -1,5 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "SmileCare - Accueil | Cabinet Dentaire à Agadir",
+  description: "SmileCare, votre cabinet dentaire de confiance à Agadir. Soins dentaires professionnels, implants, orthodontie et esthétique. Prenez rendez-vous dès aujourd'hui.",
+  keywords: ["dentiste Agadir", "cabinet dentaire", "soins dentaires", "implants", "orthodontie", "urgence dentaire"],
+  openGraph: {
+    title: "SmileCare - Cabinet Dentaire à Agadir",
+    description: "Soins dentaires professionnels avec une approche moderne et humaine",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

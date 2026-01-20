@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Mail, Lock, Eye, EyeOff, LogIn, Stethoscope, ArrowRight } from 'lucide-react';
 
-export default function SignInPage() {
-  const [mounted, setMounted] = useState(false);
+export const metadata: Metadata = {
+  title [mounted, setMounted] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function SignInPage() {
         <p className="mt-2 text-slate-600">Accédez à votre espace patient sécurisé.</p>
       </div>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-[440px]">
+      <div className="sm:mx-auto sm:w-full sm:max-w-110">
         <div className="bg-white py-10 px-8 sm:px-12 shadow-xl shadow-slate-200/60 rounded-[2.5rem] border border-slate-100">
           <form className="space-y-6" action="#" method="POST">
             <div>

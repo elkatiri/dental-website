@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from "next";
 import Image from 'next/image';
 import Link from 'next/link';
 import { 
@@ -15,11 +16,15 @@ import {
   RefreshCw
 } from 'lucide-react';
 
-// --- AJOUT DES METADATA POUR LE SEO ---
-export const metadata = {
-  title: 'Nos Services Dentaires | Implants, Orthodontie et Esthétique',
-  description: 'Découvrez nos soins dentaires experts : implantologie, orthodontie invisible (aligneurs), blanchiment dentaire et soins généraux. Technologie de pointe pour votre santé bucco-dentaire.',
-  keywords: ['dentiste', 'implant dentaire', 'orthodontie invisible', 'blanchiment dentaire', 'facettes', 'soins dentaires'],
+export const metadata: Metadata = {
+  title: "Services Dentaires | SmileCare - Implants, Orthodontie et Esthétique",
+  description: "Découvrez nos services dentaires experts : implantologie, orthodontie invisible, blanchiment dentaire et soins généraux. Technologie de pointe pour votre santé bucco-dentaire.",
+  keywords: ["implant dentaire", "orthodontie invisible", "blanchiment dentaire", "facettes", "soins dentaires", "détartrage"],
+  openGraph: {
+    title: "Nos Services Dentaires | SmileCare",
+    description: "Soins dentaires complets avec technologie moderna",
+    type: "website",
+  },
 };
 
 const Services = () => {

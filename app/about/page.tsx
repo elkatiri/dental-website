@@ -1,13 +1,18 @@
 import React from 'react';
+import type { Metadata } from "next";
 import { ShieldCheck, Award, Stethoscope, Heart, Calendar, Phone, CheckCircle2, Microscope } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// --- AJOUT DES METADATA POUR LE SEO ---
-export const metadata = {
-  title: 'À propos de notre Cabinet Dentaire | Expertise et Innovation',
-  description: 'Découvrez l’équipe d’experts du Dr. Marc Lefebvre. Plus de 15 ans d’expérience en chirurgie dentaire, implantologie et soins modernes dans un environnement serein.',
-  keywords: ['cabinet dentaire', 'équipe dentaire', 'Dr Marc Lefebvre', 'chirurgien-dentiste', 'expertise dentaire'],
+export const metadata: Metadata = {
+  title: "À propos | SmileCare - Cabinet Dentaire à Agadir",
+  description: "Découvrez l'équipe d'experts de SmileCare. Plus de 15 ans d'expérience en chirurgie dentaire, implantologie et soins modernes dans un environnement serein à Agadir.",
+  keywords: ["cabinet dentaire", "équipe dentaire", "chirurgien-dentiste", "expertise dentaire", "SmileCare"],
+  openGraph: {
+    title: "À propos de SmileCare | Cabinet Dentaire",
+    description: "Rencontrez notre équipe d'experts en santé bucco-dentaire",
+    type: "website",
+  },
 };
 
 const About = () => {
